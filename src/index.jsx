@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 import "./normalize.css";
 import "./index.css";
@@ -17,14 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />, /* affiche la page d'erreur lorsque aucun url ne correspond */
   },
   {
     path: "about/",
     element: <About/>,
   },
   {
-    path: "logement/:id",
+    path: "logement/:id", /*:id permet des paramètres dans l'url après /logement*/
     element: <Logement/>,
   },
 ]);

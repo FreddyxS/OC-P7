@@ -17,8 +17,8 @@ export default function About() {
             <source media="(min-width:992px)" srcSet={background}></source>
             <img className="background" src={backgroundM} alt="Arrière-Plan"></img>
         </picture>
-        <div className="dropdown__container">
-            <Dropdown title="Fiabilité" texte={texteFiabilite}/>
+        <div className="dropdown__container__about">
+            <Dropdown title="Fiabilité" texte={texteFiabilite}/> {/*le composant prend en paramètre un string de texte défini précédemment*/}
             <Dropdown title="Respect" texte={texteRespect}/>
             <Dropdown title="Service" texte={texteService}/>
             <Dropdown title="Securité" texte={texteSecurite}/>
